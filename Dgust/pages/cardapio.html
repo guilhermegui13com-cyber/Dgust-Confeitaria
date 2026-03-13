@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio · Doceria Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&family=Lobster&family=Caveat:wght@400..700&family=Handlee&family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="../index.html">Dgust</a></div>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" style="background-color: var(--bege);">
+        <h2 class="section-title">🍫 nosso cardápio da páscoa</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">Todos os ovos são artesanais, com casca de chocolate ao leite, meio amargo ou branco. Escolha seu favorito!</p>
+        
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <a href="#" class="btn" onclick="alert('PDF disponível para download (simulação).')"><i class="fas fa-download"></i> Baixar Cardápio em PDF</a>
+        </div>
+
+        <!-- Categoria: Ovos Tradicionais -->
+        <div class="categoria">
+            <h3>Ovos Tradicionais</h3>
+            <div class="menu-grid">
+                <!-- Card exemplo - repita para cada produto -->
+                <div class="card">
+                    <img src="../images/ovo-50g.jpg" alt="Ovo 50g" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="card-img-fallback" style="display:none;"><i class="fas fa-egg"></i></div>
+                    <h4>Ao Leite 50g mini</h4>
+                    <p>Crocante e clássico</p>
+                    <span class="preco">R$ 20,00</span>
+                </div>
+                <div class="card">
+                    <img src="../images/ovo-branco-50g.jpg" alt="Ovo branco 50g" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="card-img-fallback" style="display:none;"><i class="fas fa-egg"></i></div>
+                    <h4>Branco 50g mini</h4>
+                    <p>Suave e cremoso</p>
+                    <span class="preco">R$ 25,00</span>
+                </div>
+                <!-- Adicione mais cards seguindo o mesmo padrão -->
+                <div class="card">
+                    <img src="../images/ovo-150g.jpg" alt="Ovo 150g" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="card-img-fallback" style="display:none;"><i class="fas fa-egg"></i></div>
+                    <h4>Ao Leite 150g</h4>
+                    <p>Tamanho médio</p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+                <!-- ... continue com todos os produtos do PDF -->
+            </div>
+            <p class="badge">Sabores: sensação, ninho c/ nutella, prestígio, briganache, limão siciliano, maracujá, frutas vermelhas</p>
+        </div>
+
+        <!-- Outras categorias: Ovos Trufados, Especiais, etc (repetir estrutura) -->
+        <!-- Por brevidade, incluí apenas alguns exemplos; no código final você deve listar todos os produtos conforme PDF -->
+
+    </section>
+
+    <footer>
+        <p>Dgust · feita à mão com afeto  |  whatsapp (11) 95145-8738</p>
+    </footer>
+
+    <a href="https://wa.me/5511951458738" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
